@@ -33,11 +33,11 @@ var game = {
   
   //variable manipulation
   update:function() {
-  
+    spaceship.update();
   },
   
   //drawing to screen
   draw:function() {
-  
+    spaceship.draw();
   },
 }
