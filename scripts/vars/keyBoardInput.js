@@ -19,6 +19,7 @@ var keyBoardInput = {
         //called when W key is pressed
         case 87:
           break;
+      }
     }
   },
 }
