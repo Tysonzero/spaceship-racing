@@ -1,4 +1,7 @@
 var spaceship = {
+  //direction of the spaceship in radians
+  direction:0,
+  
   //position of the spaceship in pixels
   pos:{
     x:0,
