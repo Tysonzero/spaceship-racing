@@ -2,6 +2,12 @@ var spaceship = {
   //whether the spaceship is accelerating
   accelerate:false,
   
+  //whether the spaceship is turning
+  turn:{
+    left:false,
+    right:false,
+  },
+  
   //direction of the spaceship in radians
   direction:0,
   
