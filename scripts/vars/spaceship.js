@@ -37,12 +37,12 @@ var spaceship = {
     
     //rotates left when turn.left is true
     if(this.turn.left) {
-      this.direction += Math.PI / 120;
+      this.direction -= Math.PI / 120;
     }
     
     //rotates right when turn.right is true
     if(this.turn.right) {
-      this.direction -= Math.PI / 120;
+      this.direction += Math.PI / 120;
     }
   },
   
