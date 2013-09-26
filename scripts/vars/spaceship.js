@@ -37,7 +37,7 @@ var spaceship = {
     }
     
     //rotates right when turn.right is true
-    if(this.turn.right) {
+    if (this.turn.right) {
       this.direction += Math.PI / 120;
     }
     
@@ -54,6 +54,22 @@ var spaceship = {
     //increases position by speed
     this.pos.x += this.speed.x;
     this.pos.y += this.speed.y;
+    
+    //Horizontal screen wrapping
+    if (this.pos.x > game.width + 40) {
+      this.pos.x -= game.width + 80;
+    }
+    else if (this.pos.x < -40) {
+      this.pos.x += game.width + 80;
+    }
+    
+    //Vertical screen wrapping
+    if (this.pos.y > game.height + 40) {
+      this.pos.y -= game.height + 80;
+    }
+    else if (this.pos.y < -40) {
+      this.pos.y += game.height + 80;
+    }
   },
   
   //drawing to screen
