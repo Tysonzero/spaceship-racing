@@ -9,9 +9,11 @@ var keyBoardInput = {
       switch(e.keyCode) {
         //called when A key is pressed
         case 65:
+          spaceship.turn.left = true;
           break;
         //called when D key is pressed
         case 68:
+          spaceship.turn.right = true;
           break;
         //called when S key is pressed
         case 83:
@@ -28,9 +30,11 @@ var keyBoardInput = {
       switch(e.keyCode) {
         //called when A key is pressed
         case 65:
+          spaceship.turn.left = false;
           break;
         //called when D key is pressed
         case 68:
+          spaceship.turn.right = false;
           break;
         //called when S key is pressed
         case 83:
