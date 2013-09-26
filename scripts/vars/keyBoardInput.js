@@ -18,6 +18,7 @@ var keyBoardInput = {
           break;
         //called when W key is pressed
         case 87:
+          spaceship.accelerate = true;
           break;
       }
     }
@@ -36,6 +37,7 @@ var keyBoardInput = {
           break;
         //called when W key is pressed
         case 87:
+          spaceship.accelerate = false;
           break;
       }
     }
