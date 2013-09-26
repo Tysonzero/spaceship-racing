@@ -57,10 +57,20 @@ var spaceship = {
   
   //drawing to screen
   draw:function() {
+    //draw spaceship
 		game.ctx.beginPath();
-		game.ctx.fillStyle="#0000FF"; //fill color
-		game.ctx.strokeStyle="#0000FF"; //edge color
-		game.ctx.arc(this.pos.x, this.pos.y, 20, 0, 2*Math.PI) //circle position
+		game.ctx.fillStyle="#0000FF";
+		game.ctx.strokeStyle="#0000FF";
+		game.ctx.arc(this.pos.x, this.pos.y, 20, 0, 2*Math.PI)
+		game.ctx.fill();
+		game.ctx.stroke();
+		game.ctx.closePath();
+    
+    //draw spaceship flame
+    game.ctx.beginPath();
+		game.ctx.fillStyle="#FF0000";
+		game.ctx.strokeStyle="#FF0000";
+		game.ctx.arc(this.pos.x - 20 * Math.cos(this.direction), this.pos.y - 20 * Math.sin(this.direction), 10, 0, 2*Math.PI)
 		game.ctx.fill();
 		game.ctx.stroke();
 		game.ctx.closePath();
