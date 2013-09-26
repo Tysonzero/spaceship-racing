@@ -38,6 +38,8 @@ var game = {
   
   //drawing to screen
   draw:function() {
+    this.ctx.clearRect(0, 0, game.width, game.height);
+  
     spaceship.draw();
   },
 }
