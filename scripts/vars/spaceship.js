@@ -48,6 +48,12 @@ var spaceship = {
   
   //drawing to screen
   draw:function() {
-  
+		game.ctx.beginPath();
+		game.ctx.fillStyle="#0000FF"; //fill color
+		game.ctx.strokeStyle="#0000FF"; //edge color
+		game.ctx.arc(this.pos.x, this.pos.y, 20, 0, 2*Math.PI) //circle position
+		game.ctx.fill();
+		game.ctx.stroke();
+		game.ctx.closePath();
   },
 }
