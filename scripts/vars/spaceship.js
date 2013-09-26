@@ -32,6 +32,13 @@ var spaceship = {
     
     this.pos.x += this.speed.x;
     this.pos.y += this.speed.y;
+    
+    if(this.turn.left) {
+      this.direction += Math.PI / 120;
+    }
+    if(this.turn.right) {
+      this.direction -= Math.PI / 120;
+    }
   },
   
   //drawing to screen
