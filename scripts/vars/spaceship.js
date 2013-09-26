@@ -23,6 +23,9 @@ var spaceship = {
       this.speed.x += Math.cos(this.direction);
       this.speed.y += Math.sin(this.direction);
     }
+    
+    this.pos.x += this.speed.x;
+    this.pos.y += this.speed.y;
   },
   
   //drawing to screen
