@@ -1,9 +1,12 @@
 var spaceship = {
-  //whether the spaceship is accelerating
-  accelerate:false,
-  
   //amount of friction
   friction:0.02,
+  
+  //amount of acceleration
+  acceleration:0.4,
+  
+  //whether the spaceship is accelerating
+  accelerate:false,
   
   //whether the spaceship is turning
   turn:{
@@ -30,8 +33,8 @@ var spaceship = {
   update:function() {
     //increases speed in direction of spaceship if accelerate is true
     if(this.accelerate) {
-      this.speed.x += Math.cos(this.direction);
-      this.speed.y += Math.sin(this.direction);
+      this.speed.x += Math.cos(this.direction) * this.acceleration;
+      this.speed.y += Math.sin(this.direction) * this.acceleration;
     }
     
     this.speed.x *= 1 - this.friction;
