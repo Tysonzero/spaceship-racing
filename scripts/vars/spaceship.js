@@ -25,17 +25,22 @@ var spaceship = {
   
   //variable manipulation
   update:function() {
+    //increases speed in direction of spaceship if accelerate is true
     if(this.accelerate) {
       this.speed.x += Math.cos(this.direction);
       this.speed.y += Math.sin(this.direction);
     }
     
+    //increases position by speed
     this.pos.x += this.speed.x;
     this.pos.y += this.speed.y;
     
+    //rotates left when turn.left is true
     if(this.turn.left) {
       this.direction += Math.PI / 120;
     }
+    
+    //rotates right when turn.right is true
     if(this.turn.right) {
       this.direction -= Math.PI / 120;
     }
