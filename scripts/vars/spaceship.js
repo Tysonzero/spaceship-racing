@@ -1,4 +1,7 @@
 var spaceship = {
+  //whether the spaceship is accelerating
+  accelerate:false,
+  
   //direction of the spaceship in radians
   direction:0,
   
