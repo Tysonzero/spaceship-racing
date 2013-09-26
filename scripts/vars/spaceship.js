@@ -96,6 +96,6 @@ var spaceship = {
     game.ctx.font="30px Arial";
     game.ctx.textAlign="center";
     game.ctx.fillStyle="#000000";
-    game.ctx.fillText(Math.pow(Math.pow(this.speed.x, 2) + Math.pow(this.speed.y, 2), 0.5), 400, 30);
+    game.ctx.fillText(Math.pow(Math.pow(this.speed.x, 2) + Math.pow(this.speed.y, 2), 0.5).toFixed(2), 400, 30);
   },
 }
