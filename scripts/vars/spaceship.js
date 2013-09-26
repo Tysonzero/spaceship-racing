@@ -47,6 +47,7 @@ var spaceship = {
       this.speed.y += Math.sin(this.direction) * this.acceleration;
     }
     
+    //decrease speed by friction
     this.speed.x *= 1 - this.friction;
     this.speed.y *= 1 - this.friction;
     
