@@ -25,8 +25,8 @@ var spaceship = {
   
   //position of the spaceship in pixels
   pos:{
-    x:0,
-    y:0,
+    x:400,
+    y:300,
   },
   
   //variable manipulation
